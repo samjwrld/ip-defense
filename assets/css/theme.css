@@ -17478,6 +17478,20 @@ section {
     padding-bottom: 4rem;
   }
 }
+/* Styles for the WhatsApp floating button */
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+}
+
+.whatsapp-button img {
+  width: 32px; /* Adjust size as needed */
+  height: 32px;
+  border-radius: 50%; /* To make it circular */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Add a shadow effect */
+}
 
 input,
 button,

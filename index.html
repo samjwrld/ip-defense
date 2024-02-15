@@ -5,7 +5,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+  <title>Floating WhatsApp Button</title>
+  <link rel="stylesheet" href="styles.css">
 
     <!-- ===============================================-->
     <!--    Document Title-->
@@ -24,13 +25,18 @@
     <!-- ===============================================-->
     <link rel="stylesheet" crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==">
     <link href="assets/css/theme.css" rel="stylesheet" />
+    
 
     <link href="vendors/swiper/swiper-bundle.min.css" rel="stylesheet">
   </head>
 
 
   <body>
-
+<div class="whatsapp-button">
+    <a href="https://wa.me/9347793509" target="_blank">
+      <img src="assets\img\gallery\whatsapp-icon.png" alt="WhatsApp" width="32" height="32" />
+    </a>
+  </div>
     <!-- ===============================================-->
     <!--    Main Content-->
     <!-- ===============================================-->
@@ -38,7 +44,8 @@
       <nav class="navbar navbar-light sticky-top" data-navbar-darken-on-scroll="900">
         <div class="container pt-2"><a class="navbar-brand" href="index.html"> <img src="assets/img/gallery/logo.png" alt="..." /></a>
           <div class="navbar-nav ms-auto">
-            <button class="btn btn-secondary"><a href="tel:9347793509" class="btn btn-secondary">Call Us</a></button>
+            <button class="btn btn-secondary" onclick="window.location.href='tel:9347793509'">Call Us</button>
+
             
           </div>
         </div>
@@ -56,7 +63,7 @@
             </div>
             <div class="col-md-9 col-xl-5">
               <p class="fs-2">Know your rights & Brand your products in just a step away, for individuals, businesses, and organizations seeking to safeguard their intellectual property including patents, trademarks, copyrights, and trade secrets</p>
-              <button class="btn btn-primary mt-3">Reach Us</button>
+              <button class="btn btn-primary mt-3 reachUsBtn" data-phone="9347793509">Reach Us</button>
             </div>
           </div>
         </div>
@@ -196,7 +203,7 @@
                 <h2 class="mt-3 fs-4 fs-sm-7 latter-sp-3 lh-base fw-semi-bold">Avail 10% off on first 500 Registration </h2>
               </div>
               <div class="flex-center d-flex">
-                <button class="btn btn-info">Get Started <span class="fas fa-arrow-right"></span></button>
+                <button class="btn btn-info <button class= btn btn-secondary" onclick="window.location.href='tel:9347793509'">Get Started <span class="fas fa-arrow-right"></span></button>
               </div>
             </div>
           </div>
@@ -230,15 +237,15 @@
           <div class="row mt-6 flex-center justify-content-xl-evenly px-xl-5">
             <div class="col-md-7 col-lg-6 false"><img class="w-100" src="assets/img/gallery/comment2.png" alt="..." /></div>
             <div class="col-md-5 col-lg-4">
-              <h3 class="fs-xl-7 fs-lg-4 fs-md-3 mt-5 mt-md-0">Explain your Requirements & Subbmitte Your Documents </h3>
+              <h3 class="fs-xl-7 fs-lg-4 fs-md-3 mt-5 mt-md-0">Explain your Requirements & Submit Your Documents </h3>
               <p class="fs-xl-1 ls-3 pe-xl-2"> We'll guide you through the trademark registration process and help you take the necessary steps to protect your valuable intellectual property assets. Don't wait until it's too late, Protect your brand identity and secure your trademarks with the help of IP Defense Solutions</p>
             </div>
           </div>
           <div class="row mt-6 flex-center justify-content-xl-evenly px-xl-5">
             <div class="col-md-7 col-lg-6 order-md-1"><img class="w-100" src="assets/img/gallery/comment3.png" alt="..." /></div>
             <div class="col-md-5 col-lg-4">
-              <h3 class="fs-xl-7 fs-lg-4 fs-md-3 mt-5 mt-md-0">How does it work?</h3>
-              <p class="fs-xl-1 ls-3 pe-xl-2"> Our landing page template works on all devices, so you only have to set it up once, and get beautiful results.</p>
+              <h3 class="fs-xl-7 fs-lg-4 fs-md-3 mt-5 mt-md-0">Why Choose Us?</h3>
+              <p class="fs-xl-1 ls-3 pe-xl-2"> Our team includes seasoned litigators with extensive experience in handling intellectual property infringement cases. We have a proven track record of success in achieving favorable outcomes for our clients.</p>
             </div>
           </div>
         </div>
@@ -329,7 +336,7 @@
                 <h2 class="mt-3 fs-4 fs-sm-7 latter-sp-3 lh-base fw-semi-bold">Start Your Paper work </h2>
               </div>
               <div class="flex-center d-flex">
-                <button class="btn btn-info">Get Started <span class="fas fa-arrow-right"></span></button>
+                <button class="btn btn-info mt-3 reachUsBtn" data-phone="9347793509">Get Started <span class="fas fa-arrow-right"></span></button>
               </div>
             </div>
           </div>
@@ -339,6 +346,45 @@
       </section>
       <!-- <section> close ============================-->
       <!-- ============================================-->
+<!-- ============================================-->
+<!-- <section> begin ============================-->
+<!-- ============================================-->
+<!-- <section> begin ============================-->
+<section class="mt-6" id="contact">
+
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-9 col-lg-8 col-xl-5">
+        <h1 class="display-3 lh-sm">Contact Us</h1>
+      </div>
+      <div class="col-md-9 col-xl-5">
+        <p class="fs-2">Get in touch with us for any inquiries or assistance. Our team is ready to help you.</p>
+        <p class="fs-2 mb-2">Address: 1234 Main Street, City, State, ZIP</p>
+        <p class="fs-2 mb-2">Phone: +1 (555) 123-4567</p>
+        <!-- This is the Reach Us button -->
+        <button class="btn btn-primary mt-3 reachUsBtn" data-phone="9347793509">Reach Us</button>
+      </div>
+    </div>
+  </div>
+  <!-- end of .container-->
+
+</section>
+<!-- <section> close ============================-->
+<!-- ============================================-->
+
+<script>
+  // JavaScript code to trigger call event on clicking Reach Us button
+  var reachUsBtns = document.querySelectorAll(".reachUsBtn");
+  reachUsBtns.forEach(function(btn) {
+    btn.addEventListener("click", function() {
+      var phoneNumber = this.getAttribute("data-phone");
+      window.location.href = "tel:" + phoneNumber;
+    });
+  });
+</script>
+
+<!-- <section> close ============================-->
+<!-- ============================================-->
 
 
 
@@ -365,6 +411,7 @@
       </section>
       <!-- <section> close ============================-->
       <!-- ============================================-->
+      
 
 
     </main>

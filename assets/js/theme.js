@@ -398,6 +398,15 @@ var navbarDarkenOnScroll = function navbarDarkenOnScroll() {
       navbar.style.paddingTop = "".concat(paddingTop * (1 - alpha), "px");
       navbar.style.backgroundImage = alpha > 0 ? backgroundImage : "none";
       alpha > 0.2 ? navbar.classList.add(shadowName) : navbar.classList.remove(shadowName);
+      
+      // JavaScript code to trigger click event on navbar's Call Us button
+document.getElementById("reachUsBtn").addEventListener("click", function() {
+  // Find the navbar's Call Us button by its ID or any other identifier
+  var callUsBtn = document.querySelector(".navbar .btn-secondary");
+  // Trigger a click event on the Call Us button
+  callUsBtn.click();
+});
+
     }); // Toggle bg class on window resize
     // utils.resize(() => {
     //   const breakPoint = utils.getBreakpoint(navbar);
